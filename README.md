@@ -61,7 +61,7 @@ $methodInsert = $method->Insert($tableName,$data);
 
 
 
-#### Update Method (TableName, $Id = array() , Data = array()):
+#### Update Method (TableName, Id = array() , Data = array()):
 
 
 
@@ -94,7 +94,7 @@ $methodUpdate = $method->Update($tableName', $id, $data);
 
 
 
-#### Delete Method (TableName, $Id = array()):
+#### Delete Method (TableName, Id = array()):
 
 TableName, Id:
 
@@ -130,6 +130,31 @@ Select_all Method
 //$methodSelectAll = $method->Select_all($tableName);
 ?>
 ```
+
+
+
+
+#### Select_ch Method (TableName, Data = array()):
+
+TableName, Data:
+
+```php
+$tableName = "Orders";
+
+$data = Array
+(
+  "ShipName", "ShipAddress", "ShipCity"
+);
+
+```
+
+```php
+Select_ch Method
+<?php
+//$methodSelectCh = $method->Select_ch($tableName,$data);
+?>
+```
+
 
 
 
