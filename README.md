@@ -151,7 +151,7 @@ $data = Array
 ```php
 Select_ch Method
 <?php
-//$methodSelectCh = $method->Select_ch($tableName,$data);
+$methodSelectCh = $method->Select_ch($tableName,$data);
 ?>
 ```
 
