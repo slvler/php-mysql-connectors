@@ -34,3 +34,34 @@ Basic Table // use northwind
 | 10253       |     3    |     red    
 
 
+
+
+#### Insert Method (TableName, Data = array()):
+
+
+
+TableName, Data:
+
+```php
+$tableName = "Orders";
+
+$data = Array
+(
+	"ShipName" => "Blue",
+  "ShipAddress" => "Nottingham",
+  "ShipCity" => "UK"
+);
+```
+
+```php
+Insert Method
+<?php
+$methodInsert = $method->Insert($tableName,$data);
+?>
+```
+
+
+
+
+
+
