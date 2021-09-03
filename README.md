@@ -96,7 +96,7 @@ $methodUpdate = $method->Update($tableName', $id, $data);
 
 #### Delete Method (TableName, $Id = array()):
 
-TableName, Id;
+TableName, Id:
 
 ```php
 $tableName = "Orders";
@@ -111,6 +111,23 @@ $Id = array(
 Delete Method
 <?php
 //$methodDelete = $method->Delete($tableName,$id);
+?>
+```
+
+
+
+#### Select_all Method (TableName):
+
+TableName:
+
+```php
+$tableName = "Orders";
+```
+
+```php
+Select_all Method
+<?php
+//$methodSelectAll = $method->Select_all($tableName);
 ?>
 ```
 
