@@ -110,7 +110,7 @@ $Id = array(
 ```php
 Delete Method
 <?php
-//$methodDelete = $method->Delete($tableName,$id);
+$methodDelete = $method->Delete($tableName,$id);
 ?>
 ```
 
@@ -127,7 +127,7 @@ $tableName = "Orders";
 ```php
 Select_all Method
 <?php
-//$methodSelectAll = $method->Select_all($tableName);
+$methodSelectAll = $method->Select_all($tableName);
 ?>
 ```
 
@@ -152,6 +152,38 @@ $data = Array
 Select_ch Method
 <?php
 //$methodSelectCh = $method->Select_ch($tableName,$data);
+?>
+```
+
+
+#### Select_wh Method (TableName, Data = array(), Conn = array(), If = array()):
+
+TableName, Data, Conn, If:
+
+```php
+$tableName = "Orders";
+
+$data = Array
+(  
+    "EmployeeID" => "4"
+);
+
+$conn = Array
+(  
+    "!="
+);
+
+$if = Array
+(  
+    "AND"
+);
+
+```
+
+```php
+Select_wh Method
+<?php
+$methodSelectWh =  $method->Select_wh($tableName, $data, $conn, $if);
 ?>
 ```
 
