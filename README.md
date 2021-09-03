@@ -38,8 +38,6 @@ Basic Table // use northwind
 
 #### Insert Method (TableName, Data = array()):
 
-
-
 TableName, Data:
 
 ```php
@@ -59,6 +57,38 @@ Insert Method
 $methodInsert = $method->Insert($tableName,$data);
 ?>
 ```
+
+
+
+
+#### Update Method (TableName, $Id = array() , Data = array()):
+
+
+
+TableName, Id , Data:
+
+```php
+$tableName = "Orders";
+
+$Id = array(
+ "OrderID" => "1"
+);
+
+$data = Array
+(
+  "ShipName" => "Blue",
+  "ShipAddress" => "Nottingham",
+  "ShipCity" => "UK"
+);
+```
+
+```php
+Update Method
+<?php
+$methodUpdate = $method->Update($tableName', $id, $data);
+?>
+```
+
 
 
 
