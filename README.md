@@ -94,4 +94,29 @@ $methodUpdate = $method->Update($tableName', $id, $data);
 
 
 
+#### Delete Method (TableName, $Id = array()):
+
+TableName, Id;
+
+```php
+$tableName = "Orders";
+
+$Id = array(
+ "OrderID" => "1"
+);
+
+```
+
+```php
+Delete Method
+<?php
+//$methodDelete = $method->Delete($tableName,$id);
+?>
+```
+
+
+
+
+
+
 
