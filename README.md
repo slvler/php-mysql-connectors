@@ -1,6 +1,8 @@
 # PHP-MySQL-Class
 Mysql Connection V1
 
+v2 - MongoDb
+
 
 
 
