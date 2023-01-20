@@ -1,21 +1,29 @@
-# php-mysql-connectors
+# Slvler - php-mysql-connectors
+
+Mysql driver development that can be used on the php side
 
 
-PHP Mysql Connectors
+## Installation
 
+To install this package tou can use composer:
 
-Initialize
-------------
+```bash
+    composer require slvler/mysql-connectors
+```
+
+## Usage 
+
 ```php
-<?php
-define('DBHost', 'localhost');
-define('DBName', 'northwind');
-define('DBUser', 'root');
-define('DBPassword', '');
-define("connection","connection");
-$db = new DatabaseController(DBHost, DBName, DBUser, DBPassword,connection);
 
-?>
+use slvler\mysqlconnectors\Constant;
+use slvler\mysqlconnectors\Config\Method;
+use slvler\mysqlconnectors\Database\DatabaseController;
+
+
+$Constant = new Constant();
+
+$db = new DatabaseController($Constant->showDBHost(), $Constant->showDBName(), $Constant->showDBUser(), $Constant->showDBPassword(), $Constant->showConnection());
+
 ```
 
 
@@ -51,19 +59,17 @@ $data = Array
 );
 ```
 
+
+### Insert Method
+
+
 ```php
-Insert Method
-<?php
+
 $methodInsert = $method->Insert($tableName,$data);
-?>
+
 ```
 
-
-
-
 #### Update Method (TableName, Id = array() , Data = array()):
-
-
 
 TableName, Id , Data:
 
@@ -82,19 +88,15 @@ $data = Array
 );
 ```
 
+### Update Method
+
 ```php
-Update Method
-<?php
+
 $methodUpdate = $method->Update($tableName', $id, $data);
-?>
+
 ```
 
-
-
-
-
-
-#### Delete Method (TableName, Id = array()):
+### Delete Method (TableName, Id = array()):
 
 TableName, Id:
 
@@ -107,16 +109,17 @@ $Id = array(
 
 ```
 
+### Delete Method
+
 ```php
-Delete Method
-<?php
+
 $methodDelete = $method->Delete($tableName,$id);
-?>
+
 ```
 
 
 
-#### Select_all Method (TableName):
+### Select_all Method (TableName):
 
 TableName:
 
@@ -124,17 +127,18 @@ TableName:
 $tableName = "Orders";
 ```
 
+### Select_all Method
+
 ```php
-Select_all Method
-<?php
+
 $methodSelectAll = $method->Select_all($tableName);
-?>
+
 ```
 
 
 
 
-#### Select_ch Method (TableName, Data = array()):
+### Select_ch Method (TableName, Data = array()):
 
 TableName, Data:
 
@@ -148,11 +152,12 @@ $data = Array
 
 ```
 
+### Select_ch Method
+
 ```php
-Select_ch Method
-<?php
+
 $methodSelectCh = $method->Select_ch($tableName,$data);
-?>
+
 ```
 
 
@@ -180,17 +185,28 @@ $if = Array
 
 ```
 
+
+### Select_wh Method
+
 ```php
-Select_wh Method
-<?php
+
 $methodSelectWh =  $method->Select_wh($tableName, $data, $conn, $if);
-?>
+
 ```
 
 
 
+### Testing
+
+```bash
+vendor\bin\phpunit
+```
+
+## Credits
+
+-   [slvler](https://github.com/slvler)
 
 
+## License
 
-
-
+The MIT License (MIT). Please see [License File](https://github.com/slvler/slvler/blob/main/LICENSE.md) for more information.
