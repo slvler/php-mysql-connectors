@@ -1,9 +1,7 @@
-# PHP-MySQL-Class
-Mysql Connection V1
-
-v2 - MongoDb
+# php-mysql-connectors
 
 
+PHP Mysql Connectors
 
 
 Initialize
