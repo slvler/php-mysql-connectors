@@ -1,4 +1,10 @@
-# Slvler - php-mysql-connectors
+# slvler - php-mysql-connectors
+
+[![tests](https://github.com/slvler/php-mysql-connectors/actions/workflows/tests.yml/badge.svg)](https://github.com/slvler/php-mysql-connectors)
+[![Latest Stable Version](http://poser.pugx.org/slvler/mysql-connectors/v)](https://packagist.org/packages/slvler/mysql-connectors) 
+[![Latest Unstable Version](http://poser.pugx.org/slvler/mysql-connectors/v/unstable)](https://packagist.org/packages/slvler/mysql-connectors) 
+[![License](http://poser.pugx.org/slvler/mysql-connectors/license)](https://packagist.org/packages/slvler/mysql-connectors) 
+
 
 Mysql driver development that can be used on the php side
 
